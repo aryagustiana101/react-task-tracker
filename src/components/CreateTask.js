@@ -15,7 +15,8 @@ const CreateTask = ({ onCreate }) => {
       alert("Please enter a date time!");
       return;
     }
-    onCreate({ id: Math.floor(Math.random() * 1000) + 1, text, timestamp: Date.parse(timestamp), reminder });
+    // onCreate({ id: Math.floor(Math.random() * 1000) + 1, text, timestamp: Date.parse(timestamp), reminder });
+    onCreate({ text, timestamp: Date.parse(timestamp), reminder });
     setText("");
     setTimestamp("");
     setReminder(false);

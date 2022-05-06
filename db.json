@@ -10,13 +10,13 @@
       "id": 2,
       "text": "Meeting at School",
       "timestamp": 1651866840000,
-      "reminder": false
+      "reminder": true
     },
     {
-      "id": 3,
-      "text": "Watch Movies",
-      "timestamp": 1651866840000,
-      "reminder": true
+      "text": "Feed the fish",
+      "timestamp": 1651869720000,
+      "reminder": true,
+      "id": 3
     }
   ]
 }
