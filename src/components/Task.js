@@ -1,4 +1,4 @@
-import { FaTimes, FaPlusLarge } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Task = ({ task, onDelete, onToggleReminder }) => {
   const dateTime = new Date(task.timestamp).toLocaleDateString("en-US", {
@@ -12,7 +12,6 @@ const Task = ({ task, onDelete, onToggleReminder }) => {
     <div className={`task ${task.reminder ? "reminder" : ""}`} onDoubleClick={() => onToggleReminder(task.id)}>
       <h3>
         {task.text}
-        
         <FaTimes
           style={{ color: "red", cursor: "pointer" }}
           onClick={() => {
